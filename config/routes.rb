@@ -17,7 +17,7 @@ Rails.application.routes.draw do
     # display the form
   get '/tasks/:id/edit', to: 'tasks#edit', as: :edit
     # update info into the database
-  post '/tasks/:id', to: 'tasks#update' 
+  patch '/tasks/:id', to: 'tasks#update' 
   # As a user, I can remove a tas
   
 end
